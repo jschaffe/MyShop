@@ -17,7 +17,7 @@ services:
     networks:
       - myshop
   recommandations:
-    image: jsdockerregistry.azurecr.io/shop/recommandations-api:BuildNumber
+    image: jsdockerregistry.azurecr.io/shop/recommendations-api:BuildNumber
     networks:
       - myshop
 #  shop:
