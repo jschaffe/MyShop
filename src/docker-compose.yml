@@ -4,7 +4,7 @@ networks:
     driver: overlay
 services:
   proxy:
-    image: jsdockerregistry.azurecr.io/shop/nginx-proxy:latest
+    image: jsdockerregistry.azurecr.io/shop/proxy:latest
     ports: ["80:80"]
     networks:
       - myshop
