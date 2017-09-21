@@ -20,11 +20,11 @@ services:
     image: jcorioland-microsoft.azurecr.io/shop/recommandations-api:BuildNumber
     networks:
       - myshop
-  shop:
-    image: jcorioland-microsoft.azurecr.io/shop/front:BuildNumber
-    networks:
-      - myshop
-    environment:
-      - SHOP_PRODUCTS_API_URL=http://acsmyshop-agents.westeurope.cloudapp.azure.com/products/
-      - SHOP_RATINGS_API_URL=http://acsmyshop-agents.westeurope.cloudapp.azure.com/ratings/
-      - SHOP_RECOMMANDATIONS_API_URL=http://acsmyshop-agents.westeurope.cloudapp.azure.com/recommandations/
+#  shop:
+#    image: jcorioland-microsoft.azurecr.io/shop/front:BuildNumber
+#    networks:
+#      - myshop
+#    environment:
+#      - SHOP_PRODUCTS_API_URL=http://acsmyshop-agents.westeurope.cloudapp.azure.com/products/
+#      - SHOP_RATINGS_API_URL=http://acsmyshop-agents.westeurope.cloudapp.azure.com/ratings/
+#      - SHOP_RECOMMANDATIONS_API_URL=http://acsmyshop-agents.westeurope.cloudapp.azure.com/recommandations/
